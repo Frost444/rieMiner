@@ -1,0 +1,81 @@
+{
+  "schema": "horizon-lossless-data-v1",
+  "codec_sha256": "E017B1DEFFF2381F4479C651A5BFC162B07E0027678376547DEBBEE0A5351197",
+  "files": [
+    {
+      "path": "backend/riecoin-prime-inverse-cache-v1/154529a28f6b8356b2c6a20635a29d1f878b836bf63388a74f615c5d36e42ca7.rcpi",
+      "packed": "basis.rcpi.hzd",
+      "raw_bytes": 406779992,
+      "packed_bytes": 242708701,
+      "raw_sha256": "35597EA4472C90DF792F6182497C0991AA05B78BDA84B3E6B6FE0528F0D7E039",
+      "packed_sha256": "6B77CEC6F27C24E1AB3EC439160A0A32B7196E59BE0A262B0A1A1EEBDCB70A8A",
+      "roundtrip_ms": 35963
+    },
+    {
+      "path": "data/riecoin/base/band-1000000000-2000000000.u32",
+      "packed": "band-1000000000-2000000000.u32.hzd",
+      "raw_bytes": 189499012,
+      "packed_bytes": 42318140,
+      "raw_sha256": "AEAEA65271D21CF4FD8C4AD49F5795CE1894ED0E1DA76835B0D03A4B547B5E85",
+      "packed_sha256": "756A4BFB7102BBE8AC64C68A746737506FF367454403A755EE0F39B8A9B86B4C",
+      "roundtrip_ms": 19747
+    },
+    {
+      "path": "data/riecoin/base/band-2000000000-3000000000.u32",
+      "packed": "band-2000000000-3000000000.u32.hzd",
+      "raw_bytes": 184909000,
+      "packed_bytes": 41632120,
+      "raw_sha256": "E53340FB01467356527BDD61CE5832688B805081839892290A2B9684F0AFC9E9",
+      "packed_sha256": "8922EBACECC16441705998201F6E80F4AD799EDA52BCEA4429098FB70838920C",
+      "roundtrip_ms": 19816
+    },
+    {
+      "path": "data/riecoin/base/band-3000000000-4000000000.u32",
+      "packed": "band-3000000000-4000000000.u32.hzd",
+      "raw_bytes": 182049100,
+      "packed_bytes": 41197513,
+      "raw_sha256": "36396D21BEDD011B01E88E59601F1DFCBDD9385CC27B2BAC0D65432B5D90B75C",
+      "packed_sha256": "4C49CE104132900EB64CA323F88AE6537CB78339E6E35D5EABAD818C3C14F49F",
+      "roundtrip_ms": 19466
+    },
+    {
+      "path": "data/riecoin/wide/delta4b-band-4000000000-5000000000.u32",
+      "packed": "delta4b-band-4000000000-5000000000.u32.hzd",
+      "raw_bytes": 179969644,
+      "packed_bytes": 40878034,
+      "raw_sha256": "77F3563976DA54DAF2D7F7E529B0B6C616C14A55B658D7795AD8BB3857972BB7",
+      "packed_sha256": "06CF2E77467E56B72D94FD2687F346EDB2027536D39485EB11561AD04A29072D",
+      "roundtrip_ms": 19162
+    },
+    {
+      "path": "data/riecoin/wide/delta4b-band-5000000000-6000000000.u32",
+      "packed": "delta4b-band-5000000000-6000000000.u32.hzd",
+      "raw_bytes": 178364580,
+      "packed_bytes": 40632391,
+      "raw_sha256": "4A076A269F473EF8E0E078D91A668A9CEA0B0DCB2AA24DE47553F1FA953943C9",
+      "packed_sha256": "FE52EDA711159B550ED800B56333523D7B4E9F1BC7E1C26F5814B5EEFB224CED",
+      "roundtrip_ms": 19920
+    },
+    {
+      "path": "data/riecoin/wide/delta4b-band-6000000000-7000000000.u32",
+      "packed": "delta4b-band-6000000000-7000000000.u32.hzd",
+      "raw_bytes": 177035936,
+      "packed_bytes": 40427630,
+      "raw_sha256": "475FFD0EEE52621575CBF666FDA5079D66E049BA0BB364AED092E5D612F50D6A",
+      "packed_sha256": "FADB92F4A5CEA23B8BEF06F4229DFEF7E31F69C5CD0C8E1E026E230DACE64E9E",
+      "roundtrip_ms": 18693
+    },
+    {
+      "path": "data/riecoin/wide/delta4b-band-7000000000-8000000000.u32",
+      "packed": "delta4b-band-7000000000-8000000000.u32.hzd",
+      "raw_bytes": 175917208,
+      "packed_bytes": 40259002,
+      "raw_sha256": "7DD27219704DE87F974637E9BAA6C7DA64C6D0754DFB46180D3CB6513E870639",
+      "packed_sha256": "9C447C10B99CF61F5E208A88ABA888AA835ED2763C13CEE69EBA32CEBBA59E89",
+      "roundtrip_ms": 19630
+    }
+  ],
+  "raw_bytes": 1674524472,
+  "packed_bytes": 530053531,
+  "generator_sha256": "324149642684D63FDAE0F7EF940CA70A3BAA46604F66F485EFBDBABCDA109406"
+}

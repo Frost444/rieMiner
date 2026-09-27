@@ -1,0 +1,9 @@
+pool.account.conf
+pool.json
+.prepare.lock
+backend/*
+build/*
+cli/riecoin-gpu/bin/*
+cli/riecoin-gpu/package.json
+data/*
+*pycache*

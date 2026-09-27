@@ -1,0 +1,158 @@
+{
+  "base": "R345 full worker; R240 authenticated atlas mechanism extended to seven bands",
+  "layout": {
+    "raw": 2575112448
+  },
+  "files": [
+    {
+      "name": "r178_batch_producer.cuh",
+      "sha256": "1C07B1D7362CB670A9A8A3BDD885D17444B3F2E18F05C268D8396C7964A5F69D",
+      "bytes": 40181
+    },
+    {
+      "name": "r178_miner.cu",
+      "sha256": "BC14AAD08D1261200688BF05504935C95423BA564353DD21D49BBEB81DF7C64A",
+      "bytes": 177652
+    },
+    {
+      "name": "r184_miner.cu",
+      "sha256": "8DDBF77BC7BD26F02DBAF46A7EFBA1797EE2D42A99B7F1BFEEE42F3A8468599C",
+      "bytes": 97
+    },
+    {
+      "name": "r184_verified_file_lease.hpp",
+      "sha256": "66A4EA3B4EDD1F974D5EB65DBDC484360D1C7D8DEE52C1F437F07D48ED392A64",
+      "bytes": 8539
+    },
+    {
+      "name": "r203_miner.cu",
+      "sha256": "04D256185ED2A736CC933A55CAFA0E8BC2D601F1C3802633A6DB063C9CB07E81",
+      "bytes": 3834
+    },
+    {
+      "name": "r207_reduce33.cu",
+      "sha256": "99DE47B1752A492F383790509ED9F6F65FD12BDBBA42ADDD94472486CC30596D",
+      "bytes": 4720
+    },
+    {
+      "name": "r212_admission.cuh",
+      "sha256": "EA1CF6637B58FA9FC036C2C4D3D8C8CEB06C7887941586155847301EDF7522BE",
+      "bytes": 11379
+    },
+    {
+      "name": "r217_admission.cuh",
+      "sha256": "B37EC97E645B0DAD26BD26921941B68482C61E347F019A64E49677AE881C428B",
+      "bytes": 11194
+    },
+    {
+      "name": "r217_native31.hpp",
+      "sha256": "E5DA2AAA5F27CFF83FC2F192BF72C65909E3B331B3F2CA4210F83E8BA2F7E95B",
+      "bytes": 980
+    },
+    {
+      "name": "r228_invariant_atlas.hpp",
+      "sha256": "37A1C8E6F31232ABA2418D10D558C394F5C02C30E950DC92090663D082898092",
+      "bytes": 6738
+    },
+    {
+      "name": "r229_atlas_kernel.cu",
+      "sha256": "FBC5A7CCCAD67854B4B50DB105DEFF557D796237EECAC567A3D9E458F2C127C5",
+      "bytes": 3458
+    },
+    {
+      "name": "r234_gpu_shared_test.cpp",
+      "sha256": "D41BEB0E08E3A9D7B6CAF2701655323211F5A9CEFED18BC1B17F342A02DDCD37",
+      "bytes": 7762
+    },
+    {
+      "name": "r235_shared_atlas_test.cu",
+      "sha256": "364589F970BE65D956940C89DC3376DA6759D43B1077881681942886D9FC0A93",
+      "bytes": 7385
+    },
+    {
+      "name": "r236_full_atlas_test.cu",
+      "sha256": "9DCAFA3A1D77370F832E9D5A07C808F4E8871A15B0B19832D6232F761CA841BB",
+      "bytes": 10807
+    },
+    {
+      "name": "r251_miner.cu",
+      "sha256": "590C685EB66E1037713D7F4B59C211C814EE4FA245C9993FD3C1638FCC2448CB",
+      "bytes": 8279
+    },
+    {
+      "name": "r259_executor.cpp",
+      "sha256": "A52A43A52FA1471E8185C8248BBF570DA4C0056A2391A265768F10C3093A77A9",
+      "bytes": 1442
+    },
+    {
+      "name": "r259_executor_api.hpp",
+      "sha256": "2CADA197D52676551806FBB70790ECF6A429956B7C5A9B601A11DFD2E8FEF59E",
+      "bytes": 107
+    },
+    {
+      "name": "r259_executor_test.cpp",
+      "sha256": "5DB44808F38CC461BB5E963E8E0044389E17F528D56A5406D6C8325076D8B94B",
+      "bytes": 961
+    },
+    {
+      "name": "r259_prefetch.cuh",
+      "sha256": "E42DB3212CE074B7240879F54A710A5573A7E85C4F571FB6B2E6B8193C91E620",
+      "bytes": 11885
+    },
+    {
+      "name": "r292_member_bounds.hpp",
+      "sha256": "5DB9597990766B7779F7158736527A8BEB048ADC5341CF4ACDAE32442A5B3CD3",
+      "bytes": 1174
+    },
+    {
+      "name": "r322-coverage.hpp",
+      "sha256": "A80951D737DA2C7C6A933F095A8433C49FEE8D43814E22D11AD2D8A8EA562F9D",
+      "bytes": 120
+    },
+    {
+      "name": "r345_prepare.hpp",
+      "sha256": "38C6231ABF0B11F3880441F456909C477617BBFBBE4D4E0C1E6618986BC60E25",
+      "bytes": 2223
+    },
+    {
+      "name": "r346_atlas_builder.cuh",
+      "sha256": "DF3BE906CB9DB54D4A66D85F1D6B5E82A3471D3349CDAC7329487A041D2BD369",
+      "bytes": 4507
+    },
+    {
+      "name": "r346_atlas_client.cuh",
+      "sha256": "D489D47A6DE473749DA149FEA80F615B8939EA5C183737CE799D4AB1B45BA0A5",
+      "bytes": 692
+    },
+    {
+      "name": "r346_atlas_owner.cu",
+      "sha256": "C0ADE3A238CF4C6E494A396B3753FEB84A5A9802F6E6DD991C7F1F81B6D86DE5",
+      "bytes": 4924
+    },
+    {
+      "name": "r346_atlas_protocol.hpp",
+      "sha256": "ED1CC0D167BDC39D071D534AC8F96137E81F0F781F6E4B099E77C2E94DF86CB3",
+      "bytes": 3377
+    },
+    {
+      "name": "r346_low.cuh",
+      "sha256": "6068919CBFF03743DACF3A95FE1674CB1FAE4C53957A5D6BA5F55833438A7A0F",
+      "bytes": 1672
+    },
+    {
+      "name": "r346_shared_atlas.cuh",
+      "sha256": "AAD1A9B7F2EB615D0E20053F532A594D08C24266E07EE45A12F456A20068D606",
+      "bytes": 2869
+    },
+    {
+      "name": "r346_wide.cuh",
+      "sha256": "3DA92A6BDD4252C1C13C5D7E93C75A42D9CF70EA566B273D30CA557DD29436F4",
+      "bytes": 914
+    },
+    {
+      "name": "riecoin_rlow_tail_host.cuh",
+      "sha256": "E17CA7198BD54B3858A8D796A08BDE30B727DC2B877D881B97A43123598FE0EC",
+      "bytes": 29488
+    }
+  ]
+}
