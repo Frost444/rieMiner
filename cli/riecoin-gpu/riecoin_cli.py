@@ -23,7 +23,6 @@ def parser():
         p.add_argument('--gpu', metavar='INDEX_OR_UUID', help='GPU selection; automatic only when exactly one GPU is visible')
         p.add_argument('--data-dir', type=pathlib.Path, default=ROOT/'prepared/data/riecoin', help='directory containing generated base/ and wide/ admission tables')
         p.add_argument('--basis', type=pathlib.Path, default=ROOT/'prepared/backend/riecoin-prime-inverse-cache-v1/154529a28f6b8356b2c6a20635a29d1f878b836bf63388a74f615c5d36e42ca7.rcpi', help='generated prime/inverse basis file')
-        p.add_argument('--sieve-planes', type=int, default=32, metavar='N', help='GPU sieve plane cap (default: 32; 0 uses the device limit)')
     else:
         p.add_argument('--threads', type=int, default=min(os.cpu_count() or 1, 256), help='CPU worker threads (default: detected logical CPUs, max 256)')
     p.add_argument('--config', type=pathlib.Path, metavar='FILE', help='pool JSON created by --init-config and completed by you')
@@ -143,7 +142,6 @@ def main():
         prepare(a.prepare_data)
         return 0
     if a.duration<0 or a.session_seconds<30: raise ValueError('duration >=0 and session-seconds >=30 required')
-    if ENGINE=='gpu' and not 0<=a.sieve_planes<=1024: raise ValueError('sieve-planes must be 0..1024')
     if not a.config: raise ValueError('--config FILE is required')
     state_lock=lock_state(state)  # Held until this foreground controller exits.
     if owner(state): raise ValueError('an owned miner already uses this state directory')
@@ -158,7 +156,7 @@ def main():
         d=selected[0]
         if d['compute']<8.6: raise ValueError('R346 requires NVIDIA compute capability >=8.6')
         cfg.update(gpu_uuid=d['uuid'],gpu_pci=d['pci'])
-        env.update(CUDA_VISIBLE_DEVICES=d['uuid'],CUDA_DEVICE_ORDER='PCI_BUS_ID',HORIZON_RIECOIN_DATA=str(a.data_dir.resolve()),HORIZON_RIECOIN_BASIS=str(a.basis.resolve()),ASTRA_CUDA_WAIT_POLICY='block',ASTRA_A95_PLANES=str(a.sieve_planes),ASTRA_A93_FRONTIER_GROUPS='8',ASTRA_R178_PHASES='1')
+        env.update(CUDA_VISIBLE_DEVICES=d['uuid'],CUDA_DEVICE_ORDER='PCI_BUS_ID',HORIZON_RIECOIN_DATA=str(a.data_dir.resolve()),HORIZON_RIECOIN_BASIS=str(a.basis.resolve()),ASTRA_CUDA_WAIT_POLICY='block',ASTRA_A95_PLANES='32',ASTRA_A93_FRONTIER_GROUPS='8',ASTRA_R178_PHASES='1')
     else:
         if not 1<=a.threads<=256: raise ValueError('threads must be 1..256')
         cfg.update(gpu_uuid='CPU-HOST',gpu_pci='CPU')

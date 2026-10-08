@@ -79,8 +79,6 @@ python3 cli/riecoin-gpu/riecoin_cli.py --mine --console table --gpu 0 --config "
 
 Device 0 is an example, use your actual index or UUID. With one GPU, `--gpu` may be omitted; with several, select explicitly.
 
-The production GPU sieve defaults to a 32-plane cap. To test a different cap on the target GPU, pass `--sieve-planes N` (for example, compare `32`, `64`, and `128`); `0` removes the cap and uses the device limit. Higher caps are not guaranteed to be faster, so compare the miner's reported throughput over equivalent sessions before keeping a change.
-
 ## Dashboard
 
 Rich's maintained Live/Layout/Table/Panel components provide a full-screen, resizable display. `--console auto` selects the table on a terminal and append-only lines when redirected. `--console lines` is suitable for logs; `--no-color` disables colors. At small sizes, an explicit resize notice replaces the table while mining stays controlled.
