@@ -62,7 +62,8 @@ static bool r203_compare(const uint32_t* observed,uint32_t positions,const uint3
 #endif
 int ASTRA_R203_ENTRY(int argc,char**argv){
  _putenv_s("ASTRA_R178_PHASES","1");_putenv_s("ASTRA_A93_FRONTIER_GROUPS","8");
- _putenv_s("ASTRA_A95_PLANES","32");_putenv_s("ASTRA_A93_AUDIT","0");
+ if(!std::getenv("ASTRA_A95_PLANES"))_putenv_s("ASTRA_A95_PLANES","32");
+ _putenv_s("ASTRA_A93_AUDIT","0");
  _putenv_s("ASTRA_A94_CUTOVER","33554432");_putenv_s("ASTRA_A94_DIAGNOSTIC","0");
  _putenv_s("ASTRA_CUDA_WAIT_POLICY","block");
  const char* text=std::getenv("ASTRA_R203_GROUPED_GUARD");
